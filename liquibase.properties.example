@@ -1,6 +1,6 @@
-url=jdbc:mysql://127.0.0.1:3306/zakipoint_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&authenticationPlugin=caching_sha2_password
+url=jdbc:mysql://127.0.0.1:3306/zakipoint_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
 username=root
-password=root123
+password=${LIQUIBASE_COMMAND_PASSWORD}
 driver=com.mysql.cj.jdbc.Driver
 classpath=lib/mysql-connector-j-8.3.0.jar
 changeLogFile=db/changelog/db.changelog-master.xml
